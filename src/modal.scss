@@ -1,0 +1,242 @@
+.click {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: gray;
+    color: white;
+    box-shadow: 0;
+    border-radius: 5px;
+  }
+}
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 50%;
+  padding: 25px;
+  z-index: 10000;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h6 {
+      font-size: 18px;
+      margin: 5px;
+    }
+    span {
+      margin: 5px;
+      color: #2072ef;
+      :hover{
+        cursor: pointer;
+      }
+    }
+    
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    p {
+      font-size: 17px;
+    }
+  }
+  .color {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+  .color1 {
+    background: #444444;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color2 {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color3 {
+    background: #2072ef;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color4 {
+    background: #2072ef;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color5 {
+    background: #0053d1;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+  .color1-change {
+    background: #444444;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color2-change {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color3-change {
+    background: #ed4d4d;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color4-change {
+    background: #960018;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .color5-change {
+    background: #e81919;
+    width: 55px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    button {
+      cursor: pointer;
+    }
+    .btn1 {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    .btn2 {
+      background: #2072ef;
+      border-radius: 5px;
+      border: 1px solid #2072ef;
+      font-size: 16px;
+      padding: 10px 20px;
+      color: #fff;
+      margin-left: 20px;
+      box-shadow: 0px;
+    }
+    .btn2:hover {
+      background: #0053d1;
+    }
+    .btn2-change {
+      background: #ed4d4d;
+      border-radius: 5px;
+      border: 1px solid #960018;
+      font-size: 16px;
+      padding: 10px 20px;
+      color: #fff;
+      margin-left: 20px;
+      box-shadow: 0px;
+    }
+    .btn2-change:hover {
+      background: #e81919;
+    }
+  }
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  z-index: 9000;
+}
+@media (max-width: 1000px) {
+  .modal {
+    width: 300px;
+    .row {
+      p {
+        font-size: 15px;
+      }
+    }
+    .color {
+      font-size: 14px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .color1 {
+      width: 45px;
+      height: 20px;
+    }
+    .color2 {
+      width: 45px;
+      height: 20px;
+    }
+    .color3 {
+      width: 45px;
+      height: 20px;
+    }
+    .color4 {
+      width: 45px;
+      height: 20px;
+    }
+    .color5 {
+      width: 45px;
+      height: 20px;
+    }
+    .color1-change {
+      width: 45px;
+      height: 20px;
+    }
+    .color2-change {
+      width: 45px;
+      height: 20px;
+    }
+    .color3-change {
+      width: 45px;
+      height: 20px;
+    }
+    .color4-change {
+      width: 45px;
+      height: 20px;
+    }
+    .color5-change {
+      width: 45px;
+      height: 20px;
+    }
+  }
+}
